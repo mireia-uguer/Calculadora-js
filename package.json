@@ -1,0 +1,29 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "Aplicación de calculadora solo sumar",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mireia-uguer/Calculadora-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mireia-uguer/Calculadora-js/issues"
+  },
+  "homepage": "https://github.com/mireia-uguer/Calculadora-js#readme",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
+

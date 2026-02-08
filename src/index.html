@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <h1>Sumar dos números</h1>
+    <form id="SumaForm">
+        <input type="number" id="numero1" placeholder="Numero 1" required>
+        <input type="number" id="numero2" placeholder="Numero 2" required>
+        <button type="submit">Sumar</button>
+    </form>
+
+    <p>Resultado:<span id="resultado"></span></p>
+
+    <script src="suma.js"></script> 
+    <script>
+        document.getElementById("SumaForm").addEventListener('submit', function(event){
+            event.preventDefault();
+            const num1 = parseFloat(document.getElementById('numero1').value);
+            const num2 = parseFloat(document.getElementById('numero2').value);
+            const resultado = sumar(num1, num2);
+            document.getElementById('resultado').innerText = resultado;
+        });
+    </script>
+    
+</body>
+</html>
